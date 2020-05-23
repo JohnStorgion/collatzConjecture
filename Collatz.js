@@ -1,5 +1,8 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Collatz = void 0;
 var logger = require('./Logger.ts');
-var Collatz = (function () {
+var Collatz = /** @class */ (function () {
     function Collatz() {
         this.stepCount = 0;
     }
@@ -22,5 +25,5 @@ var Collatz = (function () {
         }
     };
     return Collatz;
-})();
+}());
 exports.Collatz = Collatz;

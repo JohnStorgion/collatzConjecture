@@ -51,8 +51,8 @@ var UserInputHandler = /** @class */ (function () {
             return __generator(this, function (_a) {
                 return [2 /*return*/, new Promise(function (resolve, reject) {
                         _this.rl.question("Enter number to test Collatz conjecture: ", function (input) {
-                            if (+input < 0) {
-                                _this.rl.close;
+                            if (+input <= 0) {
+                                _this.rl.close();
                             }
                             resolve(+input);
                         });

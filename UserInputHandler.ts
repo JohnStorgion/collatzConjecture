@@ -13,8 +13,8 @@ export class UserInputHandler {
     public async getUserInput():Promise<number> {
         return new Promise((resolve, reject) => {
             this.rl.question("Enter number to test Collatz conjecture: ", (input: string) => {            
-                if(+input < 0) {
-                   this.rl.close;
+                if(+input <= 0) {
+                    this.rl.close()
                 }
                 resolve(+input);
             })

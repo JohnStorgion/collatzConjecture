@@ -19,7 +19,7 @@ class CollatzRunner {
 
             this.collatz.calculateCollatz(inputValue);
         }
-        return           
+        return ;          
     }       
 }
 

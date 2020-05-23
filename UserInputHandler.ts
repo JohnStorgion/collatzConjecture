@@ -14,7 +14,7 @@ export class UserInputHandler {
         return new Promise((resolve, reject) => {
             this.rl.question("Enter number to test Collatz conjecture: ", (input: string) => {            
                 if(+input <= 0) {
-                    this.rl.close()
+                    this.rl.close();
                 }
                 resolve(+input);
             })

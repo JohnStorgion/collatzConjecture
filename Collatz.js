@@ -11,7 +11,7 @@ var Collatz = /** @class */ (function () {
             logger.logOutput("total steps: " + this.stepCount);
             return;
         }
-        else if (n % 2 === 1) {
+        if (n % 2 === 1) {
             logger.logOutput(n);
             n = (3 * n) + 1;
             this.stepCount++;
